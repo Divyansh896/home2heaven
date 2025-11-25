@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ContactPage from "./components/ContactPage";
 import ScrollToTop from "./components/ScrollToTop"; // import the new component
 import OurWorkPage from "./components/OurWorkPage";
+import PrivacyPolicyPage from "./components/PrivacyPolicyPage";
 export default function App() {
   return (
     <Router>
@@ -27,6 +28,8 @@ export default function App() {
         />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/our-work" element={<OurWorkPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+
       </Routes>
       <Footer />
     </Router>

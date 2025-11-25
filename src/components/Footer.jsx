@@ -8,7 +8,6 @@ export default function Footer() {
 
   const navigate = useNavigate();
   const location = useLocation();
-
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
@@ -150,6 +149,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
         <div className=" mt-10 mb-3 pt-6 text-center text-gray-400 text-sm">
           <p>
             Website Developed by{" "}
@@ -163,6 +163,7 @@ export default function Footer() {
             </a>
           </p>
         </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -170,12 +171,12 @@ export default function Footer() {
               © {currentYear} Home2Heaven. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a
-                href="#"
-                className="text-gray-500 hover:text-white transition-colors"
+              <RouterLink
+                to="/privacy-policy"
+                className="text-gray-400 hover:text-yellow-400 transition-colors"
               >
                 Privacy Policy
-              </a>
+              </RouterLink>
             </div>
           </div>
         </div>
